@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EKE Guestlist</title>
+    <style>
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .logo-container img{
+            max-width: 200px;
+            height: auto;
+        }
+
+        .search-wrapper{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar{
+            width: 60vw;
+            min-width: 800px;
+            padding: 12px;
+            font-size: 1.2em;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .information-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .status-indicator{
+            width: 10px;
+            background-color: red;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .signed-in{
+            background-color: green;
+        }
+
+        .signed-in-text{
+            color: green !important;
+        }
+
+        .button-group{
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .circle-button{
+            width: 40px;
+            height: 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .green-button{
+            background-color: green;
+        }
+
+        .red-button{
+            background-color: red;
+        }
+
+        .information-card{
+            box-shadow: 4px 0 7px rgba(0,0,0.05);
+            border-radius: 8px;
+            padding: 10px;
+            width: 60vw;
+            min-width: 800px;
+            overflow-wrap: break-word;
+            position: relative;
+            z-index: 1;
+        }
+
+        .info-corner{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: right;
+        }
+
+        .information-card .barcode,
+        .information-card .status-text{
+            font-weight: bold;
+            font-size: 1.8em;
+        }
+
+        .status-text{
+            color: red;
+            margin-bottom: 0.5em;
+        }
+
+        .information-card .name-email,
+        .information-card .order-table{
+            display: flex;
+            gap: 20px;
+        }
+
+        .middle-dot{
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        p{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="Aristotelis_transparent_Logo.png" alt="Aristotelis Logo">
+    </div>
+
+    <h1 style="text-align: center;">EKE Guestlist</h1>
+
+    <div class="search-wrapper">
+        <input type="text" class="search-bar" placeholder="Search by Name, Order #, Barcode #, or Email">
+    </div>
+
+    <div class="information-wrapper">
+        <div class="status-indicator"></div>
+        <div class="information-card"> 
+
+            <div class="info-corner">
+                <p class="barcode">Cla128913243</p>
+                <p class="status-text">Not Signed In</p>
+                <div class="button-group">
+                    <button class="circle-button green-button">O</button>
+                    <button class="circle-button red-button">O</button>
+                </div>
+            </div>
+
+
+            <div class="name-email">
+                <p class="name">Nikolas Michael</p>
+                <p class="middle-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="email">nikolasmichael1996@gmail.com</p>
+            </div>
+            <div class="order-table">
+                <p class="order-number"><b>Order #: </b>1289</p>
+                <p class="middle-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="table">Table 7</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="information-wrapper">
+        <div class="status-indicator signed-in"></div>
+        <div class="information-card"> 
+
+            <div class="info-corner">
+                <p class="barcode">Chr12761291</p>
+                <p class="status-text signed-in-text">Signed In</p>
+                <div class="button-group">
+                    <button class="circle-button green-button">O</button>
+                    <button class="circle-button red-button">O</button>
+                </div>
+            </div>
+
+
+            <div class="name-email">
+                <p class="name">Chrissy Georgiou</p>
+                <p class="middle-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="email">chrissyg_80@hotmail.com</p>
+            </div>
+            <div class="order-table">
+                <p class="order-number"><b>Order #: </b>1276</p>
+                <p class="middle-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="table">Table 7</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
