@@ -10,19 +10,37 @@
     height: auto;
 }
 
-.search-wrapper{
+.search-container {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.search-bar{
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.search-bar {
     width: 60vw;
-    min-width: 800px;
     padding: 12px;
     font-size: 1.2em;
     border: 1px solid #ccc;
     border-radius: 8px;
+}
+
+.clear-button {
+    position: absolute;
+    right: -90px; /* Adjust based on button width */
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 20px;
+    font-size: 1em;
+    background-color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .information-wrapper{
